@@ -1,0 +1,61 @@
+.creator-container {
+  background: #fafbff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+  padding: 36px 28px;
+  max-width: 420px;
+  margin: 50px auto;
+  border: 1px solid #e3e6ef;
+}
+
+.creator-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.creator-container label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  text-align: left;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #444;
+}
+
+.creator-container input[type="text"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  background: #fff;
+  transition: all 0.25s ease;
+  color: #333;
+}
+
+.creator-container input[type="text"]:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 3px rgba(74,108,247,0.15);
+  outline: none;
+  background: #f9fbff;
+}
+
+.creator-container input[type="submit"] {
+  background: linear-gradient(90deg, #4a6cf7 0%, #6c8efb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  margin-top: 12px;
+}
+
+.creator-container input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74,108,247,0.3);
+}

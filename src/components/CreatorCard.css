@@ -1,0 +1,76 @@
+.Card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin: 16px auto;
+    max-width: 350px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.Card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.name {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 12px 0 8px 0;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.Card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 12px 0;
+    border: 2px solid #eee;
+}
+
+.Card a {
+  display: block;
+  margin-bottom: 10px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.Card a:hover {
+  text-decoration: underline;
+}
+
+.Card .edit-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ff9800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500;
+  width: 8px;
+  height: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  margin: 32px auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+
+.edit-link:hover .icons {
+  box-shadow: 0 2px 8px rgba(255,152,0,0.18);
+  transform: scale(1.1) rotate(-10deg);
+  background: #fff7e6;
+}
